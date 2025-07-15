@@ -41,12 +41,6 @@ def login_post():
 def signup():
     return render_template('signup.html')
 
-@auth.route("/signup")
-def signup():
-
-    return render_template("signup.html")
-
-
 @auth.route("/signup", methods=["POST"])
 def signup_post():
     # code to validate and add user to database goes here

@@ -6,3 +6,4 @@ Flask-Babel
 mysql-connector
 pymysql
 python-dotenv
+requests

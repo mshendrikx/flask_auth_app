@@ -108,7 +108,7 @@
       selectedCountryPlaceholder,
       selectedCountryData
     ) {
-      return "e.g. " + selectedCountryPlaceholder;
+      return selectedCountryPlaceholder;
     },
   });
 
@@ -133,8 +133,8 @@
       fullPhone.value = fullNumber;
 
       // Form is valid, you can submit it now
-      alert("Form is valid!\nPhone number: " + fullNumber);
-      // this.submit(); // Uncomment to actually submit the form
+      // alert("Form is valid!\nPhone number: " + fullNumber);
+      this.submit(); // Uncomment to actually submit the form
     } else {
       phoneInput.classList.add("is-invalid");
       phoneError.textContent = "Please enter a valid phone number";
